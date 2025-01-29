@@ -1,0 +1,277 @@
+/****************** BUSCA01 *********************/
+
+.busca01 .container{
+	padding: 220px 40px 60px 40px;
+}
+
+.busca01-breadcrumb a{
+	text-decoration: none;
+	color: black;
+}
+
+.busca01-breadcrumb a:hover{
+	text-decoration: underline;
+}
+
+.busca01-breadcrumb p span{
+	font-family: "OpenSans Bold";
+	color: #5aacd8;
+}
+
+.busca01-titulo{
+	margin-top: 50px;
+}
+
+.busca01-titulo h2{
+	font-family: "OpenSans ExtraBold";
+	font-weight: normal;
+	font-size: 60px;
+}
+
+/****************** BUSCA02 *********************/
+
+.busca02{
+	background-color: #f1f1f1;
+}
+
+.busca02 .container{
+	display: flex;
+}
+
+.busca02-lista-segmentos{
+	background-color: #9ecc4d;
+}
+
+.busca02-lista-segmentos-single{
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+}
+
+.busca02-lista-segmentos-single:hover{
+	background-color: white;
+}
+
+.busca02-lista-segmentos-single img{
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+}
+
+.busca02-lista-segmentos-single p{
+	color:  white;
+	font-size: 14px;
+}
+
+.busca02-lista-segmentos-single:hover p{
+	color: #9ecc4d;
+}
+
+.busca02-empresas{
+	overflow: hidden;
+	width: calc(100% - 140px);
+	padding: 20px 60px;
+}
+
+.busca02-empresas h3{
+	font-family: "OpenSans Bold";
+}
+
+.busca02-empresas-single{
+	width: 350px;
+	margin: 0 40px 40px 0;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.busca02-empresas-single:last-of-type{
+	margin-right: 0;
+}
+
+.busca02-empresas-single-img{
+	width: 100%;
+	position: relative;
+}
+
+.busca02-empresas-single-img img{
+	width: 100%;
+	border-radius: 40px 40px 0 0;
+	margin-bottom: -5px;
+	height: 292px;
+	object-fit: cover;
+}
+
+.busca02-empresas-single-img img.flag{
+	position: absolute;
+	left: 16px;
+	top:  16px;
+	width: 46px;
+	height: auto;
+	border-radius: 0;
+}
+
+.busca02-empresas-single-img img.coracao{
+	position: absolute;
+	right: 40px;
+	top:  0;
+	width: 54px;
+	height: auto;
+	border-radius: 0;
+}
+
+.busca02-empresas-single-valores{
+	background-color: #9ecc4d;
+	padding:  10px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+}
+
+.busca02-empresas-single-valores-img{
+	display: inline-block;
+}
+
+.busca02-empresas-single-valores-img img{
+	vertical-align: middle;
+}
+
+.busca02-empresas-single-valores-text{
+	display: inline-block;
+	width: calc(100% - 111px);
+	text-align: right;
+}
+
+.busca02-empresas-single-valores-text span{
+	font-family: "OpenSans Medium";
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.busca02-empresas-single-text{
+	text-align: left;
+	border:  1px solid #9ecc4d;
+	border-radius: 0 0 40px 40px;
+	padding: 20px 30px;
+	height: 240px;
+	overflow: hidden;
+}
+
+.busca02-empresas-single-text h2{
+	color: #9ecc4d;
+	font-weight: normal;
+	font-family: "OpenSans Bold";
+	margin-bottom: 8px;
+	white-space: normal;
+}
+
+.busca02-empresas-single-text p{
+	margin-top: 4px;
+	color: #838383;
+	white-space: normal;
+}
+
+.busca02-empresas-vazio{
+	font-style: italic;
+	text-align: center;
+}
+
+.busca02-categorias{
+	margin-top: 30px;
+}
+
+.busca02-categorias-single{
+	background-color: white;
+	display: inline-block;
+	padding: 20px 14px;
+	border-radius: 20px;
+	width: 256px;
+	margin-left: 20px;
+	margin-bottom: 40px;
+	text-align: left;
+	text-decoration: none;
+}
+
+.busca02-categorias-single > div{
+	display: flex;
+	align-items: center;
+}
+
+.busca02-categorias-single img{
+	width: 72px;
+	height: 72px;
+	object-fit: cover;
+	vertical-align: middle;
+	border-radius: 14px;
+	margin-right: 10px;
+}
+
+.busca02-categorias-single span{
+	font-size: 18px;
+	font-family: "OpenSans Bold";
+	color: #5aacd8;
+}
+
+.busca02-categorias-single .busca02-categorias-single-destaque{
+	color: black;
+}
+
+@media screen and (max-width: 768px){
+
+	/****************** busca01 *********************/
+
+	.busca01 .container{
+		padding: 140px 20px 30px 20px;
+	}
+
+	.busca01-breadcrumb a{
+		font-size: 12px;
+	}
+
+	.busca01-breadcrumb p{
+		font-size: 12px;
+	}
+
+	.busca01-titulo{
+		margin-top: 20px;
+	}
+
+	.busca01-titulo img{
+		max-width: 100%;
+	}
+
+	.busca01-titulo h2{
+		font-size: 30px;
+	}
+
+	/****************** BUSCA02 *********************/
+
+
+	.busca02 .container{
+		padding: 20px;
+	}
+
+	.busca02-lista-segmentos{
+		display: none;
+	}
+	.busca02-empresas{
+		width: 100%;
+		padding: 0;
+	}
+
+	.busca02-empresas-single{
+		width: 100%;
+	}	
+
+	.busca02-categorias-single{
+		padding: 10px 14px;
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+
+}

@@ -1,0 +1,564 @@
+/*
+Theme Name:  Lá pra Cá Theme
+Theme URI:  https: //heltonbarros.com
+Author:  Helton Barros
+Author URI:  http: //heltonbarros.com
+Description:  Tema para a Lá pra Cá
+Version:  1.0
+*/
+
+*{
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+	font-family: "OpenSans Regular";
+}
+
+@font-face{
+	src:url('fonts/OpenSans/OpenSans/OpenSans-Regular.ttf');
+	font-family: "OpenSans Regular";
+}
+
+@font-face{
+	src:url('fonts/OpenSans/OpenSans/OpenSans-Bold.ttf');
+	font-family: "OpenSans Bold";
+}
+
+@font-face{
+	src:url('fonts/OpenSans/OpenSans/OpenSans-Medium.ttf');
+	font-family: "OpenSans Medium";
+}
+
+@font-face{
+	src:url('fonts/OpenSans/OpenSans/OpenSans-ExtraBold.ttf');
+	font-family: "OpenSans ExtraBold";
+}
+
+html,body{
+	height: 100%;
+  	/*scroll-behavior: smooth;*/
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float:  right;
+}
+
+.clear{
+	clear: both;
+}
+
+/****************** HEADER *********************/
+
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+/****************** HEADER - MAIN *********************/
+
+.header-main{
+	background-color: white;
+}
+
+.header-main .container{
+	padding: 20px 40px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.header-main-img img{
+	width: 200px;
+}
+
+.header-main-menu-desktop{
+	width: calc(100% - 583px);
+}
+
+.header-main-menu-desktop ul{
+	list-style: none;
+	text-align: center;
+}
+
+.header-main-menu-desktop ul li{
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.header-main-menu-desktop ul li a{
+	text-decoration: none;
+	color: #484649;
+	white-space: nowrap;
+}
+
+.header-main-menu-desktop ul li a img{
+	width: 20px;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+.header-main-menu-desktop ul li.selected a{
+	font-family: "OpenSans Bold";
+	color: #58aaca;
+}
+
+.header-main-menu-desktop ul li.selected a img{
+	width: 20px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.header-main-menu-como-funciona{
+	position: relative;
+}
+
+.header-main-menu-como-funciona-menu{
+	position: absolute;
+	display: none;
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+	padding: 20px 4px;
+	background-color: white;
+}
+
+.header-main-menu-como-funciona-menu p{
+	border-bottom: 1px solid #484649;
+	padding: 10px 20px;
+	color: #484649;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.header-main-menu-como-funciona-menu p:hover{
+	background-color: #d9ecf6;
+}
+
+.header-main-menu-como-funciona-menu p:last-of-type{
+	border-bottom: none;
+}
+
+.header-main-btns{
+	position: relative;
+}
+
+.header-main-btns a, .logado-menu a{
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #9ecc4d;
+	border-radius: 8px;
+	color:  white;
+	text-decoration: none;
+	margin-left: 40px;
+}
+
+.header-main-btns a.criar-conta{
+	background-color: #5aacd8;
+}
+
+.header-main-btns .logado, .header-main-mobile .logado{
+	font-size: 12px;
+	display: inline-block;
+	margin-left: 20px;
+	padding: 12px;
+	border-radius: 8px;
+	background-color: #5aacd8;
+	color:  white;
+}
+
+.logado-menu{
+	position: absolute;
+	border-radius: 8px;
+	background-color: white;
+	right: 0;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	overflow: hidden;
+	display: none;
+}
+
+.header-main-mobile .logado-menu{
+	right:  50px;
+}
+
+.logado-menu a{
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	border-radius: 0;
+	background-color: transparent;
+	color: #484649;
+	border-top: 1px solid #ccc;
+}
+
+.logado-menu a:first-of-type{
+	border: none;
+}
+
+.logado-menu a:hover{
+	background-color: #5aacd8;
+	color: white;
+}
+
+.header-main-mobile{
+	display: none;
+	width: calc(100% - 120px);
+	padding-right: 20px;
+	text-align: right;
+	position: relative;
+}
+
+.header-main-mobile-login{
+	white-space: nowrap;
+	text-decoration: none;
+	color: white;
+	background-color: #5aacd8;
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 10px;
+	font-size: 14px;
+}
+
+.header-main-mobile-login span{
+	display: inline-block;
+}
+
+.header-main-mobile-login img{
+	vertical-align: middle;
+	width: 20px;
+}
+
+.header-main-mobile-menu-btn{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.header-main-mobile-menu-btn span{
+	background-color: black;
+	width: 30px;
+	height: 4px;
+	display: block;
+	margin-bottom: 6px;
+	transition: 0.5s;
+	position: relative;
+}
+
+.header-main-mobile-menu-btn span:last-of-type{
+	margin-bottom: 0;
+}
+
+.header-main-mobile-menu{
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	display: none;
+}
+
+.header-main-mobile-menu-btn-wrapper{
+	width: 100%;
+	text-align: right;
+	padding: 11px 20px 20px 20px;
+}
+
+.header-main-mobile-menu > a{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.header-main-mobile-menu > a:last-of-type{
+	border: none;
+	margin-bottom: 0;
+}
+
+.header-main-mobile-menu-como-funciona-menu{
+	position: absolute;
+	top: 90px;
+	background-color: white;
+	z-index: 3;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+	display: none;
+}
+
+.header-main-mobile-menu-como-funciona-menu a{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.header-main-mobile-menu-como-funciona-menu a:last-of-type{
+	border: none;
+	margin-bottom: 0;
+}
+
+/****************** HEADER - BUSCA *********************/
+
+.header-busca{
+	background-color: #d9ecf6;
+	text-align: center;
+}
+
+.header-busca form{
+	display: inline-block;
+	width: 100%;
+	max-width: 600px;
+	padding: 20px 0;
+}
+
+.header-busca-div{
+	display: flex;
+	width: 100%;
+}
+
+.header-busca-input{
+	width: calc(100% - 70px);
+}
+
+.header-busca-input input{
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+	padding: 8px 20px;
+	border: 2px solid #fafafa;
+	border-radius: 30px 0 0 30px;
+	font-family: "OpenSans Medium";
+}
+
+.header-busca-input input::placeholder{
+	color: #d1d1d1;
+}
+
+.header-busca-submit{
+	padding: 6px 20px;
+	background-color: #5aacd8;
+	border-radius: 0 30px 30px 0;
+	cursor: pointer;
+}
+
+.header-busca-submit img{
+	width: 30px;
+}
+
+/****************** FOOTER *********************/
+
+.pre-footer{
+	width: 100%;
+	margin-bottom: -6px;
+	position: relative;
+	z-index: 5;
+}
+
+footer{
+	background-size: 100%;
+	background-color: #161615;
+	position: relative;
+	z-index: 5;
+}
+
+footer .container{
+	padding: 250px 40px 200px 40px;	
+}
+
+footer .container > img{
+	width: 200px;
+}
+
+.footer-01{
+	display: flex;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.footer-01 > div{
+	width: 33.33%;
+}
+
+.footer01-01 p{
+	margin-top: 30px;
+	font-size: 26px;
+	color: white;
+}
+
+.footer01-02{
+	padding-left: 8%;
+}
+
+.footer01-02 span{
+	display: none;
+}
+
+.footer01-02 a{
+	display: block;
+	font-family: "OpenSans Bold";
+	text-decoration: none;
+	font-size: 26px;
+	color: white;
+	margin-top: 14px;
+}
+
+.footer01-02 a:hover{
+	text-decoration: underline;
+}
+
+.footer01-03{
+	padding-left: 8%;
+}
+
+.footer01-03-midias{
+	display: flex;
+	width: 100%;
+	text-align: center;
+}
+
+.footer01-03-midias div{
+	width: 33.33%;
+}
+
+.footer01-03 p{
+	margin-top: 30px;
+	font-size: 26px;
+	color: white;
+}
+
+.footer-02{
+	border-top:  1px solid white;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.footer-02 a{
+	color: white;
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	font-family: "OpenSans Bold";
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.footer-02 a:hover{
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 768px){
+
+	/****************** HEADER - MAIN *********************/
+
+	.header-main .container{
+		padding: 6px 0px;
+	}
+
+	.header-main-img img{
+		margin-bottom: -5px;
+		width: 120px;
+	}
+
+	.header-main-menu-desktop{
+		display: none;
+	}
+
+	.header-main-btns{
+		display: none;
+	}
+
+	.header-main-mobile{
+		display: block;
+	}
+
+	/****************** HEADER - BUSCA *********************/
+
+	.header-busca .container{
+		padding: 0 20px;
+	}
+
+	.header-busca form{
+		padding: 10px 0;
+	}
+
+	/****************** FOOTER *********************/
+
+	footer .container{
+		padding: 80px 20px;	
+	}
+
+	footer .container > img{
+		width: 120px;
+	}
+
+	.footer-01{
+		flex-wrap: wrap;
+	}
+
+	.footer-01 > div{
+		width: 100%;
+	}
+
+	.footer01-01 p{
+		margin-top: 20px;
+		font-size: 14px;
+	}
+
+	.footer01-02{
+		padding-left: 0;
+		margin-top: 20px;
+	}
+
+	.footer01-02 a{
+		font-size: 14px;
+		margin-top: 8px;
+		display: inline-block;
+	}
+
+	.footer01-02 span{
+		display: inline-block;
+		margin: 0 10px;
+		color: white;
+	}
+
+	.footer01-03{
+		padding-left: 0;
+		margin-top: 20px;
+	}
+
+	.footer01-03-midias img{
+		width: 40px;
+	}
+
+	.footer01-03 p{
+		margin-top: 20px;
+		font-size: 16px;
+	}
+}

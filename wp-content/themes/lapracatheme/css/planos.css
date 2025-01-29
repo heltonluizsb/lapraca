@@ -1,0 +1,157 @@
+body{
+	background-color: #f1f1f1;
+}
+
+/****************** PLANOS - BOX01 *********************/
+
+.planos-box01 .container{
+	padding: 220px 40px 100px 40px;
+}
+
+.planos-box01-breadcrumb a{
+	text-decoration: none;
+	color: black;
+}
+
+.planos-box01-breadcrumb a:hover{
+	text-decoration: underline;
+}
+
+.planos-box01-breadcrumb p span{
+	font-family: "OpenSans Bold";
+	color: #5aacd8;
+}
+
+.planos-box01-titulo{
+	padding-top: 100px;
+}
+
+.planos-box01 table{
+	margin-top: 100px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.planos-box01 table tr th{
+	background-color: #9ecc4d;
+	border: 1px solid #888;
+	padding: 10px;
+	font-size: 30px;
+	font-family: "OpenSans Bold";
+	color: white;
+	width: 25%;
+}
+
+.planos-box01 table tr td{
+	border: 1px solid #888;
+	padding: 10px;
+}
+
+.planos-box01 table tr td p{
+	font-size: 12px;
+}
+
+.planos-box01 table tr td:first-of-type{
+	font-size: 16px;
+	color: white;
+	background-color: #c4c4c4;
+}
+
+.planos-box01 table tr td:nth-of-type(3){
+	background-color: #f7f7f7;
+}
+
+.planos-box01 table tr td:nth-of-type(3) p{
+	margin-top: 6px;
+}
+
+.planos-box01 table tr td:last-of-type{
+	background-color: #f7f7f7;
+}
+
+.planos-box01 table tr:nth-of-type(2) td{
+	font-family: "OpenSans Bold";
+	color: #2a71cd;
+}
+
+.planos-box01 table tr:nth-of-type(2) td:first-of-type{
+	color: white;
+}
+
+.planos-box01 table tr:nth-of-type(3) td{
+	font-family: "OpenSans ExtraBold";
+	color: #2a71cd;
+}
+
+.planos-box01 table tr:nth-of-type(3) td:first-of-type{
+	color: white;
+}
+
+.planos-box01 table tr:nth-of-type(4) td{
+	font-family: "OpenSans Bold";
+	color: #20924b;
+}
+
+.planos-box01 table tr:nth-of-type(4) td:first-of-type{
+	color: white;
+}
+
+.planos-box01 table tr td img{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.planos-box01 table tr td a{
+	display: inline-block;
+	padding: 20px;
+	background-color: #5fcb4d;
+	color: white;
+	text-decoration: none;
+	border-radius: 60px;
+}
+
+.planos-box01 table tr td.planos-box01-tabela-plano-desativado a{
+	background-color: #c3c3c3;
+	cursor: default;
+}
+
+@media screen and (max-width: 768px){
+
+	/****************** PLANOS - BOX01 *********************/
+
+	.planos-box01 .container{
+		padding: 140px 20px 60px 20px;
+		text-align: center;
+	}
+
+	.planos-box01-titulo{
+		padding-top: 40px;
+	}
+
+	.planos-box01 table{
+		margin-top: 40px;
+	}
+
+	.planos-box01 table tr th{
+		border: 2px solid #f1f1f1;
+		padding: 6px;
+		font-size: 14px;
+	}
+
+	.planos-box01 table tr td{
+		border: 2px solid #f1f1f1;
+		padding: 6px;
+		font-size: 10px;
+	}
+
+	.planos-box01 table tr td:first-of-type{
+		font-size: 12px;
+	}
+
+	.planos-box01 table tr td a{
+		padding: 8px;
+	}
+
+
+}

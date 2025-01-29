@@ -1,0 +1,176 @@
+body{
+	background-color: #f1f1f1;
+}
+
+/****************** ANUNCIANTE - BOX01 *********************/
+
+.anunciante-box01 .container{
+	padding: 220px 40px 0 40px;
+}
+
+.anunciante-box01 .container{
+	padding: 220px 40px 0 40px;
+}
+
+.anunciante-box01-breadcrumb a{
+	text-decoration: none;
+	color: black;
+}
+
+.anunciante-box01-breadcrumb a:hover{
+	text-decoration: underline;
+}
+
+.anunciante-box01-breadcrumb p span{
+	font-family: "OpenSans Bold";
+	color: #5aacd8;
+}
+
+/****************** ANUNCIANTE - BOX02 *********************/
+
+.anunciante-box02{
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin-top: 40px;
+}
+
+.anunciante-box02 .container{
+	padding: 200px 40px 80px 40px;
+	position: relative;
+	z-index: 2;
+}
+
+.anunciante-box02-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 1;
+}
+
+.anunciante-box02-text{
+	border-bottom: 2px solid white;
+	max-width: 600px;
+}
+
+.anunciante-box02-text h2{
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: normal;
+	font-family: "OpenSans Bold";
+	color: white;
+}
+
+/****************** ANUNCIANTE - BOX03 *********************/
+
+.anunciante-box03{
+}
+
+.anunciante-box03 .container{
+	padding: 40px;
+	display: flex;
+}
+
+.anunciante-box03-text{
+	width: 50%;
+}
+
+.anunciante-box03-address{
+	width: 50%;
+	padding-left: 20px;
+}
+
+.anunciante-box03-address-map{
+	position: relative;
+	padding-top: 70%;
+}
+
+.anunciante-box03-address-map-wrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #ccc;
+}
+
+.anunciante-box03-address-map-location{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 3;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.7);
+	font-family: "OpenSans Bold";
+}
+
+.anunciante-box03-text-wrapper{
+	padding: 40px;
+	border:  1px solid #e1e1e1;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.2);
+	height: 100%;
+}
+
+.anunciante-box03-address-text{
+	padding: 20px;
+	background-color: white;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.2);
+}
+
+.anunciante-box03-address-text-img{
+	margin: 6px 16px 6px 0;
+	background-color: white;
+	padding: 8px;
+	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.2);
+	display: inline-block;
+	border-radius: 8px;
+}
+
+.anunciante-box03-address-text img{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.anunciante-box03-address-text-paragraph{
+	padding-right: 30px;
+	font-family: "OpenSans Bold";	
+}
+
+.anunciante-box03-address-text-paragraph a{
+	text-decoration: none;
+	color: black;
+	font-family: "OpenSans Bold";	
+}
+
+.anunciante-box03-address-text-paragraph a:hover{
+	text-decoration: underline;
+}
+
+/****************** ANUNCIANTE - BOX04 *********************/
+
+.anunciante-box04{
+	width: 100%;
+	padding-top: 30%;
+	position: relative;
+}
+
+.anunciante-box04-wrapper{
+	position: absolute;
+	top: 150px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

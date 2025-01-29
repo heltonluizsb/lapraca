@@ -1,0 +1,114 @@
+.blog02-conteudo{
+	padding-top: 80px;
+}
+
+.page-single{
+	padding: 40px;
+	position: relative;
+	z-index: 1;
+	background-color: white;
+}
+
+.page-single > h2{
+	font-family: "OpenSans Bold";
+ 	color: #110e6c;
+	font-size: 38px;
+}
+
+.page-single > img{
+	width: 100%;
+	height: auto;
+	max-height: 500px;
+	object-fit: contain;
+	margin-top: 30px;
+	display: block;
+}
+
+.page-single-content{
+	margin-top: 70px;
+}
+
+.page-single-content > h2:first-of-type{
+	max-width: 700px;
+	display: inline-block;
+	font-family: "OpenSans Bold";
+	font-size: 30px;
+	color: #34bbd2;
+}
+
+.page-single-content > p:first-of-type{
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+	color: #414141;
+	line-height: 28px;
+}
+
+.page-single-content .wp-block-columns{
+	margin-top: 80px;
+}
+
+.page-single-content .wp-block-columns:first-of-type h2{
+	text-align: right;
+	margin-bottom: 30px;
+	font-family: "Akwe Pro Bold";
+	font-size: 30px;
+	color: #34bbd2;
+}
+
+.page-single-content .wp-block-columns p, .page-single-content > p{
+	margin-bottom: 20px;
+	font-size: 22px;
+	text-align: left;
+	color: black;
+}
+
+@media screen and (max-width: 768px){
+
+	/****************** BLOG02 *********************/
+
+	.blog02 .container{
+		padding: 20px 0;
+	}
+
+	/****************** SINGLE *********************/
+
+	.blog02-conteudo{
+		padding-top: 0;
+	}
+
+	.page-single{
+		padding: 20px;
+	}
+
+	.page-single > h2{
+		font-size: 20px;
+	}
+
+	.page-single-content{
+		margin-top: 20px;
+	}
+
+	.page-single-content > p:first-of-type{
+		line-height: normal;
+	}
+
+	.page-single-content .wp-block-columns{
+		margin-top: 80px;
+	}
+
+	.page-single-content .wp-block-columns:first-of-type h2{
+		text-align: right;
+		margin-bottom: 30px;
+		font-family: "Akwe Pro Bold";
+		font-size: 30px;
+		color: #34bbd2;
+	}
+
+	.page-single-content .wp-block-columns p, .page-single-content > p{
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+
+}

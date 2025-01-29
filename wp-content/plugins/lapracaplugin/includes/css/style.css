@@ -1,0 +1,196 @@
+*{
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+@font-face{
+	src:url('fonts/Segoe UI.ttf');
+	font-family: "Segoe UI";
+}
+
+/********************* MENSAGENS DE ALERTA **********************/
+
+.msg-box{
+	width: 100%;
+	background-color: white;
+	margin:  20px 0;
+	padding: 10px 20px;
+	-webkit-box-shadow: 0.5px 1.5px 2px 0px rgba(122,123,140,0.5);
+	-moz-box-shadow: 0.5px 1.5px 2px 0px rgba(122,123,140,0.5);
+	box-shadow: 0.5px 1.5px 2px 0px rgba(122,123,140,0.5);
+	font-weight: bold;
+}
+
+.erro{
+	border-left:  5px solid #dc3232;
+}
+
+.sucesso{
+	border-left: 5px solid #77d22a;
+}
+
+/******************** CATEGORIAS *********************/
+
+.table-form-label{
+	padding-right:30px;
+}
+
+.table-form-label label{
+	font-weight: 600;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+.table-form input[type=text],
+.table-form input[type=email],
+.table-form select,
+.table-form textarea{
+	min-width: 25em;
+}
+
+.table-form textarea{
+	height: 120px;
+	resize: none;
+}
+
+.table-form-input{
+	text-align: center;
+	padding: 10px 0;
+}
+
+.table-form-planos-vc img{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.table-list{
+	margin-top: 30px;
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;
+	border:  1px solid #c3c4c7;
+}
+
+.table-list tr:first-of-type{
+	border:  1px solid #c3c4c7;
+}
+
+.table-list th{
+	text-align: left;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.table-list td{
+	padding: 10px;
+	font-size: 14px;
+}
+
+.table-list tr:nth-child(even){
+	background-color: #f6f7f7;
+}
+
+.table-list img{
+	max-width: 60px;
+	max-height: 60px;
+}
+
+.table-list img.banner-img{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.foto-empresa{
+	border-radius: 10px;
+	border: 2px solid #e2e2e2;
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	position: relative;
+}
+
+.foto-empresa > div{
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 4px;
+	margin: 0;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	cursor: pointer;
+}
+
+.foto-empresa > div:hover{
+	background-color: red;
+}
+
+.foto-empresa > div span{
+	width: 100%;
+	height: 4px;
+	background-color: black;
+	display: block;
+	position: relative;
+	top: 9px;
+}
+
+.foto-empresa > div:hover span{
+	background-color: white;
+}
+
+.foto-empresa > div span:nth-of-type(1){
+	transform: rotateZ(45deg);
+}
+
+.foto-empresa > div span:nth-of-type(2){
+	transform: rotateZ(-45deg);
+	top: 5px;
+}
+
+/****************** LOGIN - PROCESSANDO *********************/
+
+.login-processando{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 10;
+	opacity: 0;
+	display: none;
+	text-align: center;
+}
+
+.login-processando .container{
+	height: 100%;
+}
+
+.login-processando-box{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+}
+
+.login-processando-box img{
+	width: 50px;
+	height: 50px;
+}
+
+.login-processando-box h2{
+	color: white;
+	text-shadow: 0px 0px 10px black;
+	-webkit-text-shadow: 0px 0px 10px black;
+	-moz-text-shadow: 0px 0px 10px black;
+	font-weight: normal;
+}
